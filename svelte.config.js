@@ -8,10 +8,8 @@ const config = {
 	preprocess: preprocess(),
 
 	kit: {
-		adapter: adapter({
-			trailingSlash: 'always',
-			fallback: 'index'
-		})
+		adapter: adapter(),
+		outDir: 'public'
 	}
 };
 
