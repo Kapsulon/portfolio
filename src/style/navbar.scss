@@ -1,0 +1,41 @@
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    position: fixed;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+
+li {
+    display: block;
+    float: left;
+    font-family: Inter;
+    font-size: 15pt;
+}
+
+a {
+    display: block;
+    padding: 16px;
+    text-decoration: none;
+    color: #b6b6b6;
+    transition: color 0.3s ease-in-out;
+}
+
+.active {
+    color: #ddb812;
+}
+
+li a:hover:not(.active) {
+    color: #ffffff;
+}
+
+.active:hover {
+    color: #f7d230;
+}
+
+.navbar-icon {
+    padding-right: 6px;
+}

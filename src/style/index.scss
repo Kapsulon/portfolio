@@ -1,0 +1,121 @@
+body {
+    color: #ffffff;
+    background-color: rgb(30, 30, 31);
+}
+
+.textbox {
+    padding-left: 8vw;
+    padding-top: 16vh;
+}
+
+.name {
+    font-family: 'Inter', sans-serif;
+    font-weight: 600;
+    font-size: 25pt;
+}
+
+.highlight {
+    font-size: 16pt;
+    color: #ddb812;
+}
+
+.spotifyspy {
+    padding-top: 1.25rem;
+    padding-bottom: 1.25rem;
+    padding-left: 1.5rem;
+    padding-right: 1.5rem;
+    background-color: rgb(23, 23, 23);
+    border-color: #ddb812;
+    border-style: solid;
+    border-width: 2px;
+    border-radius: 0.5rem;
+    align-items: center;
+    max-width: 32rem;
+    display: flex;
+    margin-top: 2rem;
+    position: relative;
+    line-height: inherit;
+    -webkit-text-size-adjust: 100%;
+    tab-size: 4;
+    font-family: Inter;
+}
+
+.spotifyspytext {
+    padding-left: 20px;
+}
+
+.spotifyspytextdivider {
+    margin: 0;
+}
+
+.album_title {
+    color: rgb(121, 121, 121);
+}
+
+.description {
+    font-family: 'Inter', sans-serif;
+    font-weight: 300;
+    font-size: 15pt;
+}
+
+.blinking-cursor {
+    font-weight: 100;
+    font-size: 20px;
+    color: #2e3d48;
+    -webkit-animation: 1s blink step-end infinite;
+    -moz-animation: 1s blink step-end infinite;
+    -ms-animation: 1s blink step-end infinite;
+    -o-animation: 1s blink step-end infinite;
+    animation: 1s blink step-end infinite;
+    margin-right: 0px;
+}
+
+@keyframes blink {
+    from,
+    to {
+      color: transparent;
+    }
+    50% {
+      color: #fff;
+    }
+}
+
+@-moz-keyframes blink {
+    from,
+    to {
+      color: transparent;
+    }
+    50% {
+      color: #fff;
+    }
+}
+
+@-webkit-keyframes blink {
+    from,
+    to {
+      color: transparent;
+    }
+    50% {
+      color: #fff;
+    }
+}
+
+@-ms-keyframes blink {
+    from,
+    to {
+      color: transparent;
+    }
+    50% {
+      color: #fff;
+    }
+}
+
+@-o-keyframes blink {
+    from,
+    to {
+      color: transparent;
+    }
+    50% {
+      color: #fff;
+    }
+}
