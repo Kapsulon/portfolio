@@ -27,14 +27,14 @@
     let path:string = $page.url.pathname;
 </script>
 
-<ul>
+<ul class="navbar">
     {#each pages as page}
         {#if page.url == path}
-            <li>
+            <li class="navbar">
                 <b><a href={page.url} class="active"><i class={page.favicon}></i>{page.name}</a></b>
             </li>
         {:else}
-            <li>
+            <li class="navbar">
                 <a href={page.url}><i class={page.favicon}></i>{page.name}</a>
             </li>
         {/if}
