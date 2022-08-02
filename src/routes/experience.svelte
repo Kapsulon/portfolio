@@ -4,7 +4,7 @@
     import Navbar from "$lib/navbar.svelte";
     import {createCard} from "$lib/languagecard.svelte";
 
-    let cards:HTMLUListElement;
+    let languagecards:HTMLUListElement;
     let languages = [
         {
             name: "French",
@@ -28,7 +28,7 @@
     onMount(() => {
         languages.forEach(language => {
             let card = createCard(language.name, language.desc, language.icon, language.level);
-            cards.appendChild(card);
+            languagecards.appendChild(card);
         });
     });
 </script>
@@ -39,6 +39,6 @@
 
 <Navbar />
 
-<ul bind:this={cards}>
+<ul class="languages" bind:this={languagecards}>
 
 </ul>
