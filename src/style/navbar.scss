@@ -22,19 +22,22 @@ a {
     padding: 16px;
     text-decoration: none;
     color: #b6b6b6;
-    transition: color 0.3s ease-in-out;
+    transition: color  0.3s ease-in-out;
+    transition: text-shadow 0.3s ease-in-out;
 }
 
 .active {
     color: #ddb812;
 }
 
-li a:hover:not(.active) {
+li a:not(.active):hover {
     color: #ffffff;
+    text-shadow: 0 0 2px #ffffff;
 }
 
-.active:hover {
+li a.active:hover {
     color: #f7d230;
+    text-shadow: 0 0 3px #f7d230;
 }
 
 .navbar-icon {
