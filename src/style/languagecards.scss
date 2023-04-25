@@ -1,0 +1,30 @@
+div.card {
+    font-family: 'Inter', sans-serif;
+    background-color: rgb(23, 23, 23);
+    border: 2px solid #ddb812;
+    border-radius: 10px;
+    box-shadow: 0 1px 2px rgba(0, 0, 0, 0.1);
+    margin: 0 0 1.5em;
+    padding: 1.5em;
+}
+
+div.card-header {
+    display: flex;
+    align-items: center;
+    margin-bottom: 1em;
+}
+
+div.card-header img {
+    width: 50px;
+    height: 50px;
+    margin-right: 1em;
+}
+
+div.card-logo img {
+    width: 30px;
+    height: 30px;
+}
+
+div.card-footer {
+    color: #999999;
+}

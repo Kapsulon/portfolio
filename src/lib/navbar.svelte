@@ -9,9 +9,9 @@
             favicon: "fa-solid fa-house navbar-icon"
         },
         {
-            name: "Experience",
-            url: "/experience",
-            favicon: "fa-solid fa-rocket navbar-icon"
+            name: "Languages",
+            url: "/languages",
+            favicon: "fa-solid fa-earth-europe navbar-icon"
         },
         {
             name: "Projects",

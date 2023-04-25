@@ -6,6 +6,7 @@
             card.innerHTML = `
                 <div class="card">
                     <div class="card-header">
+                        <img src="${logo}" alt="${name} logo">
                         <h3>${name}</h3>
                     </div>
                     <div class="card-body">
