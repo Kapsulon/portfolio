@@ -21,7 +21,7 @@
         },
         {
             name: "Korean",
-            desc: "I just started learning Korean recently. I'm learning it on my own and I'm very excited to learn more languages.",
+            desc: "I started learning Korean recently. I'm learning it on my own and I'm very excited to learn more languages.",
             level: "Beginner",
             icon: "kr_flag.png"
         }
@@ -40,6 +40,4 @@
 
 <Navbar />
 
-<ul class="languages" bind:this={languagecards}>
-
-</ul>
+<ul class="languages page" bind:this={languagecards}></ul>

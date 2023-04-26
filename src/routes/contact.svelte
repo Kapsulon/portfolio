@@ -8,3 +8,7 @@
 </head>
 
 <Navbar />
+
+<div class="page">
+    coming soon
+</div>

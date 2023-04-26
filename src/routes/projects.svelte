@@ -9,7 +9,7 @@
 
 <Navbar />
 
-<div class="projects">
+<div class="projects page">
     <div class="project-card">
         <a href="https://github.com/Kapsulon/klc" target="_blank">
             <span class="project-name">Kapsulon's Logo Creator</span>
