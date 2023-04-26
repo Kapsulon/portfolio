@@ -70,6 +70,45 @@ body {
     margin-right: 0px;
 }
 
+div.projects {
+    padding-top: 50px;
+    font-family: 'Inter', sans-serif;
+    // center elements on x axis
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+div.project-card {
+    font-family: Inter;
+    font-weight: 300;
+    font-size: 15pt;
+    padding: 20px;
+    min-width: 600px;
+    background-color: rgb(23, 23, 23);
+    border-color: #ddb812;
+    border-style: solid;
+    border-width: 2px;
+    border-radius: 0.5rem;
+    align-items: center;
+    max-width: 32rem;
+    display: flex;
+    margin-top: 2rem;
+    position: relative;
+}
+
+span.project-name {
+    font-weight: 600;
+    font-size: 20pt;
+    padding-bottom: 100px;
+}
+
+span.project-desc {
+    font-weight: 300;
+    font-size: 15pt;
+}
+
 @keyframes blink {
     from,
     to {
