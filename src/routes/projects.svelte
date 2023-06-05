@@ -11,6 +11,12 @@
 
 <div class="projects page">
     <div class="project-card">
+        <a href="https://kapsulon.itch.io/dualitys-descent" target="_blank">
+            <span class="project-name">Duality's Descent</span>
+            <br/>
+            <span class="project-desc">A game I made with a friend for a 48H Game Jam</span>
+    </div>
+    <div class="project-card">
         <a href="https://github.com/Kapsulon/klc" target="_blank">
             <span class="project-name">Kapsulon's Logo Creator</span>
             <br/>
