@@ -1,0 +1,78 @@
+@import "tailwindcss";
+
+@font-face {
+    font-family: "Inter";
+    src: url("/fonts/Inter/Inter-VariableFont_opsz,wght.ttf") format("truetype");
+    font-weight: 100 900;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: "Inter";
+    src: url("/fonts/Inter/Inter-Italic-VariableFont_opsz,wght.ttf") format("truetype");
+    font-weight: 100 900;
+    font-style: italic;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: "DM Sans";
+    src: url("/fonts/DM_Sans/DMSans-VariableFont_opsz,wght.ttf") format("truetype");
+    font-weight: 100 900;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: "DM Sans";
+    src: url("/fonts/DM_Sans/DMSans-Italic-VariableFont_opsz,wght.ttf") format("truetype");
+    font-weight: 100 900;
+    font-style: italic;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: "Rubik";
+    src: url("/fonts/Rubik/Rubik-VariableFont_wght.ttf") format("truetype");
+    font-weight: 300 900;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: "Rubik";
+    src: url("/fonts/Rubik/Rubik-Italic-VariableFont_wght.ttf") format("truetype");
+    font-weight: 300 900;
+    font-style: italic;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: "Source Sans 3";
+    src: url("/fonts/Source_Sans_3/SourceSans3-VariableFont_wght.ttf") format("truetype");
+    font-weight: 200 900;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: "Source Sans 3";
+    src: url("/fonts/Source_Sans_3/SourceSans3-Italic-VariableFont_wght.ttf") format("truetype");
+    font-weight: 200 900;
+    font-style: italic;
+    font-display: swap;
+}
+
+@theme {
+    --font-inter: "Inter", sans-serif;
+    --font-dm-sans: "DM Sans", sans-serif;
+    --font-rubik: "Rubik", sans-serif;
+    --font-source-sans: "Source Sans 3", sans-serif;
+}
+
+body {
+    background-color: black;
+    color: white;
+    font-family: "Source Sans 3";
+}

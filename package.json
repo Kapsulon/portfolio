@@ -12,7 +12,18 @@
     "astro": "astro"
   },
   "dependencies": {
-    "astro": "^7.3.4"
+    "@astrojs/svelte": "^9.0.1",
+    "@lucide/astro": "^1.48.0",
+    "@lucide/svelte": "^1.48.0",
+    "@tailwindcss/vite": "^4.3.3",
+    "astro": "^7.3.4",
+    "prettier": "^3.9.9",
+    "prettier-plugin-astro": "^1.0.1",
+    "prettier-plugin-svelte": "^4.1.1",
+    "prettier-plugin-tailwindcss": "^0.8.1",
+    "svelte": "^5.57.1",
+    "tailwindcss": "^4.3.3",
+    "typescript": "^6.0.3"
   },
   "allowScripts": {
     "esbuild": true

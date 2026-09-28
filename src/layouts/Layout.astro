@@ -1,0 +1,15 @@
+---
+import '../styles/global.css'
+import Navbar from '../components/navbar.svelte'
+import CommonHead from '../components/CommonHead.astro';
+
+const url = Astro.url;
+---
+
+<html lang="en">
+	<CommonHead title="Théo BARY" description="" />
+	<body>
+        <Navbar url={url} client:load />
+		<slot />
+	</body>
+</html>

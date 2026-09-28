@@ -1,17 +1,37 @@
 ---
-
+import Layout from '../layouts/Layout.astro'
+import { MapPin, BriefcaseBusiness, Mail } from '@lucide/astro';
 ---
 
-<html lang="en">
-	<head>
-		<meta charset="utf-8" />
-		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
-		<link rel="icon" href="/favicon.ico" />
-		<meta name="viewport" content="width=device-width" />
-		<meta name="generator" content={Astro.generator} />
-		<title>Astro</title>
-	</head>
-	<body>
-		<h1>Astro</h1>
-	</body>
-</html>
+<Layout>
+	<div class="w-full h-dvh bg-gray-800 flex justify-center items-center" data-nav-theme="light">
+		<div class="flex flex-col justify-center items-center space-y-4 text-center">
+			<span class="text-3xl">I'm a <b>software engineer</b> working across systems, architecture, performance & product development.</span>
+			<div class="border border-white/30 rounded-4xl p-2 flex flex-row justify-center items-center space-x-2">
+				<div class="flex flex-row items-center justify-center space-x-1 bg-white/30 rounded-4xl py-1 px-2">
+					<MapPin size={12} />
+					<span class="text-sm font-bold">
+						Toulouse
+					</span>
+				</div>
+				<span class="block w-px h-5 bg-white/30"></span>
+				<a href="mailto:exemple@exemple.com" class="font-extralight">contact@kaplance.com</a>
+			</div>
+		</div>
+	</div>
+	<div class="w-full h-dvh bg-blue-50 flex justify-center items-center" data-nav-theme="dark">
+		<div class="flex flex-col justify-center items-center space-y-4 text-center">
+			<span class="text-xl text-black">I <b>design</b> and <b>build</b> software across the stack, <br/> from low-level systems and high-performance computing to backend, web applications and infrastructure.</span>
+			<div class="flex flex-row space-x-4">
+				<a class="flex flex-row space-x-2 text-black cursor-pointer bg-black/10 rounded-4xl py-1 px-2" href="/work">
+					<BriefcaseBusiness />
+					<span>View my work</span>
+				</a>
+				<a class="flex flex-row space-x-2 text-black cursor-pointer bg-black/10 rounded-4xl py-1 px-2" href="/contact">
+					<Mail />
+					<span>Get in touch</span>
+				</a>
+			</div>
+		</div>
+	</div>
+</Layout>
