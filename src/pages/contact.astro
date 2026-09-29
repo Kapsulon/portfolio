@@ -1,6 +1,75 @@
 ---
+import { IconMail } from '@tabler/icons-astro';
 import Layout from '../layouts/Layout.astro'
+import Checkbox from '../components/checkbox.svelte';
 ---
 
 <Layout>
+    <div class="min-h-dvh w-full bg-slate-800 flex flex-col items-center space-y-8 pt-24">
+        <div class="flex flex-col items-center">
+            <h1 class="font-bold text-6xl">Let's talk.</h1>
+            <p>Start exchanging ideas and plans.</p>
+        </div>
+        <div class="bg-slate-700 rounded-lg border border-slate-500 p-4 w-11/12 lg:w-[40%] flex flex-col">
+            <form action="post" class="flex flex-col space-y-4">
+                <div class="flex flex-col">
+                    <label for="company" class="font-semibold text-lg">Company</label>
+                    <input type="text" class="bg-slate-800 border border-slate-500 rounded-lg p-2" id="company" />
+                </div>
+                <div class="flex flex-col">
+                    <label for="title" class="font-semibold text-lg">Message Title</label>
+                    <input type="text" class="bg-slate-800 border border-slate-500 rounded-lg p-2" id="title" />
+                </div>
+                <div class="flex flex-col">
+                    <label for="contact-email" class="font-semibold text-lg">Contact Email</label>
+                    <div class="flex flex-row w-full">
+                        <select name="email-language" id="contact-email-language" class="bg-slate-800 border border-slate-500 px-1 rounded-l-lg">
+                            <option value="english">English</option>
+                            <option value="french">French</option>
+                        </select>
+                        <input type="text" class="bg-slate-800 border border-slate-500 rounded-lg rounded-l-none border-l-0 p-2 w-full" id="contact-email" />
+                    </div>
+                </div>
+                <div class="flex flex-col">
+                    <span class="font-semibold text-lg">Interest(s)</span>
+                    <div class="flex flex-col items-baseline space-y-0.5">
+                        <div class="flex flex-row justify-center items-center space-x-1">
+                            <Checkbox id="interest-software-architecture" client:load />
+                            <label for="interest-software-architecture">Software Architecture</label>
+                        </div>
+                        <div class="flex flex-row justify-center items-center space-x-1">
+                            <Checkbox id="interest-software-engineering" client:load />
+                            <label for="interest-software-engineering">Software Engineering</label>
+                        </div>
+                        <div class="flex flex-row justify-center items-center space-x-1">
+                            <Checkbox id="interest-performance-engineering" client:load />
+                            <label for="interest-performance-engineering">Performance Engineering</label>
+                        </div>
+                        <div class="flex flex-row justify-center items-center space-x-1">
+                            <Checkbox id="interest-infra-devops" client:load />
+                            <label for="interest-infra-devops">Infrastructure / DevOps</label>
+                        </div>
+                    </div>
+                </div>
+                <div class="flex flex-col">
+                    <label for="description" class="font-semibold text-lg">Message</label>
+                    <textarea class="bg-slate-800 border border-slate-500 rounded-lg p-2 h-32" id="description" />
+                </div>
+                <button class="bg-white py-1 px-2 rounded-lg text-black cursor-pointer">
+                    <span>Send form</span>
+                </button>
+            </form>
+            <div class="w-full flex flex-row items-center space-x-4 my-3">
+                <span class="block h-px w-full bg-slate-500"></span>
+                <span class="text-slate-400">OR</span>
+                <span class="block h-px w-full bg-slate-500"></span>
+            </div>
+            <a href="mailto:contact@kaplance.com" class="w-full bg-white py-1 px-2 rounded-lg text-black cursor-pointer flex flex-row justify-center items-center space-x-2">
+                <IconMail />
+                <span>
+                    Email me
+                </span>
+            </a>
+        </div>
+    </div>
 </Layout>

@@ -54,14 +54,15 @@
            h-full
            mask-[linear-gradient(to_bottom,black_0%,transparent_100%)] backdrop-blur-xl"
     ></div>
-    <a href="/" class="z-1 text-xl">Kapsulon</a>
+    <div class="z-1">
+        <NavbarLink target="/" {url}>Kapsulon</NavbarLink>
+    </div>
     <div class="z-1 flex flex-row space-x-12">
         <NavbarLink target="/work" {url}>Work</NavbarLink>
         <NavbarLink target="/services" {url}>Services</NavbarLink>
         <NavbarLink target="/about" {url}>About</NavbarLink>
     </div>
-    <a href="/contact" class="z-1 flex flex-row items-center justify-center space-x-1 text-xl">
-        <span>Contact</span>
-        <ArrowRight />
-    </a>
+    <div class="z-1">
+        <NavbarLink target="/contact" {url}>Contact</NavbarLink>
+    </div>
 </nav>

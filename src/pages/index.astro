@@ -1,6 +1,6 @@
 ---
 import Layout from '../layouts/Layout.astro'
-import { MapPin, BriefcaseBusiness, Mail } from '@lucide/astro';
+import { IconMapPin, IconMail, IconBriefcase } from "@tabler/icons-astro";
 ---
 
 <Layout>
@@ -9,7 +9,7 @@ import { MapPin, BriefcaseBusiness, Mail } from '@lucide/astro';
 			<span class="text-3xl">I'm a <b>software engineer</b> working across systems, architecture, performance & product development.</span>
 			<div class="border border-white/30 rounded-4xl p-2 flex flex-row justify-center items-center space-x-2">
 				<div class="flex flex-row items-center justify-center space-x-1 bg-white/30 rounded-4xl py-1 px-2">
-					<MapPin size={12} />
+					<IconMapPin size={12} />
 					<span class="text-sm font-bold">
 						Toulouse
 					</span>
@@ -24,11 +24,11 @@ import { MapPin, BriefcaseBusiness, Mail } from '@lucide/astro';
 			<span class="text-xl text-black">I <b>design</b> and <b>build</b> software across the stack, <br/> from low-level systems and high-performance computing to backend, web applications and infrastructure.</span>
 			<div class="flex flex-row space-x-4">
 				<a class="flex flex-row space-x-2 text-black cursor-pointer bg-black/10 rounded-4xl py-1 px-2" href="/work">
-					<BriefcaseBusiness />
+					<IconBriefcase />
 					<span>View my work</span>
 				</a>
 				<a class="flex flex-row space-x-2 text-black cursor-pointer bg-black/10 rounded-4xl py-1 px-2" href="/contact">
-					<Mail />
+					<IconMail />
 					<span>Get in touch</span>
 				</a>
 			</div>
