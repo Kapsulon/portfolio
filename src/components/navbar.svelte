@@ -55,7 +55,7 @@
            mask-[linear-gradient(to_bottom,black_0%,transparent_100%)] backdrop-blur-xl"
     ></div>
     <div class="z-1">
-        <NavbarLink target="/" {url}>Kapsulon</NavbarLink>
+        <NavbarLink target="/" {url}>Théo</NavbarLink>
     </div>
     <div class="z-1 flex flex-row space-x-12">
         <NavbarLink target="/work" {url}>Work</NavbarLink>

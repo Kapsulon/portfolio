@@ -225,6 +225,8 @@ This allows technology choices to change according to the client's problem.
 - Engine systems
 - Performance-sensitive software
 
+Credential: during my 4th year (exchange) at Concordia University, I took **Game Development**, taught directly by Ubisoft Montréal, and earned a certificate of completion. Roughly half of the course covered game design: how to design a game and its mechanics to be fun (the 3Cs: Character, Controls, Camera, etc.), not only the technical side.
+
 ## Product Engineering
 
 - Backend development

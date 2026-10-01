@@ -1,6 +1,196 @@
 ---
 import Layout from '../layouts/Layout.astro'
+import { IconBriefcase, IconMail, IconCpu, IconRuler2, IconServerCog, IconMountain, IconLanguage, IconSchool, IconArrowAutofitDown, IconArrowDown } from "@tabler/icons-astro";
+
+const pillars = [
+	{
+		icon: IconRuler2,
+		title: "Architecture first",
+		text: "I plan with my team how the system is structured before writing it, and I can explain the trade-offs to people who don't write code.",
+	},
+	{
+		icon: IconCpu,
+		title: "Hard part first",
+		text: "I prototype the risky component early, in the language it deserves, instead of discovering the problem at the end.",
+	},
+	{
+		icon: IconServerCog,
+		title: "Measure then optimize",
+		text: "Profiling and benchmarks drive the decisions. Numbers over adjectives.",
+	},
+];
+
+const layers = [
+	{
+		title: "Systems",
+		tags: ["C", "C++", "Concurrency", "Networking", "oneTBB", "OpenCL", "Compilers", "Graphics", "Luau"],
+	},
+	{
+		title: "Product",
+		tags: ["Backend", "Frontend", "Vue", "Electron", "APIs", "Real-time", "PostgreSQL", "MongoDB"],
+	},
+	{
+		title: "Infrastructure",
+		tags: ["CI/CD", "Terraform", "Jenkins", "GitHub Actions", "Bitbucket Pipelines", "Docker", "Kubernetes"],
+	},
+];
+
+const evidence = [
+	{
+		title: "Two game engines",
+		text: "ATMO (ECS architecture, C++23) and RTYPE (Godot-inspired node system, client/server). Both embed Luau for scripting.",
+	},
+	{
+		title: "An LLVM-style compiler",
+		text: "Written from scratch: lexing, parsing, semantic analysis, intermediate representation and code generation.",
+	},
+	{
+		title: "Parallelized game of life",
+		text: "A multi-species cellular simulation iterated across multi-threaded, oneTBB and OpenCL (CPU and GPU kernels) implementations, benchmarked against each other.",
+	},
+	{
+		title: "A product back-end, rewritten",
+		text: "For Cognitive Design Systems: the full interface of a Vue/Electron app built from a designer's mockups, then the whole back-end architecture reworked and migrated smoothly.",
+	},
+];
+
+const timeline = [
+	{ where: "EPITECH, Toulouse", what: "5th year, software engineer and expert in information technology", detail: "2022-2027" },
+	{ where: "Cognitive Design Systems, Toulouse", what: "Freelance mission", detail: "Front-end implementation of mock-ups and back-end architecture rewrite with lossless transition." },
+	{ where: "Concordia University, Montréal", what: "Exchange year (4th year)", detail: "Architecture, Compiler Design, Networking, Concurrency and Parallel Computing. Also completed Game Development, taught by Ubisoft Montréal (certificate earned): game engine technology and game design, from the 3Cs to building mechanics that are fun to play." },
+	{ where: "BPCE-IT, Toulouse", what: "DevOps / infrastructure", detail: "Current role. XL Release, XL Deploy, Jenkins, JFrog Artifactory and Open Liberty" },
+];
 ---
 
 <Layout>
+	<section class="w-full bg-gray-800 flex justify-center items-center px-6 pt-32 pb-24" data-nav-theme="light">
+		<div class="max-w-5xl w-full flex flex-col-reverse md:flex-row items-center gap-12">
+			<div class="flex flex-col space-y-5 md:w-3/5">
+				<h1 class="text-5xl font-bold">I'm Théo.</h1>
+				<p class="text-2xl">
+					I work on the parts of software that are <b>hard</b>: systems, performance and architecture.
+				</p>
+				<p class="text-lg text-white/70">
+					I'm broad across the stack and deep in systems. I write game engines and compilers for fun, rewrite back-ends for a living, and I'm comfortable taking a product from the first diagram to a running deployment.
+				</p>
+				<div class="flex flex-row items-center gap-2 text-white/70">
+					<IconSchool size={18} />
+					<span>5th year at Epitech Toulouse, based in Toulouse, France</span>
+				</div>
+			</div>
+			<img
+				src="/images/toronto-cn-tower-pose.jpg"
+				alt="Théo at the Mont Royal lookout in Montréal"
+				class="w-64 md:w-2/5 max-w-xs aspect-3/4 object-cover rounded-3xl border border-white/20"
+			/>
+		</div>
+	</section>
+
+	<section class="w-full bg-blue-50 text-black flex justify-center px-6 py-24" data-nav-theme="dark">
+		<div class="max-w-5xl w-full flex flex-col space-y-10">
+			<h2 class="text-3xl font-bold">How I work</h2>
+			<div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+				{pillars.map(({ icon: Icon, title, text }) => (
+					<div class="bg-black/5 rounded-2xl p-6 flex flex-col space-y-3">
+						<Icon size={28} />
+						<h3 class="text-xl font-bold">{title}</h3>
+						<p class="text-black/70">{text}</p>
+					</div>
+				))}
+			</div>
+		</div>
+	</section>
+
+	<section class="w-full bg-gray-800 flex justify-center px-6 py-24" data-nav-theme="light">
+		<div class="max-w-5xl w-full flex flex-col space-y-10">
+			<div class="flex flex-col space-y-2">
+				<h2 class="text-3xl font-bold">Broad across the stack, deep in systems</h2>
+				<p class="text-white/70">The technologies change with the problem. The discipline underneath doesn't.</p>
+			</div>
+			<div class="flex flex-col gap-4">
+				<div class="rounded-2xl border border-white/30 bg-white/10 p-5 text-center">
+					<span class="text-xl font-bold">Software architecture</span>
+				</div>
+				<div class="grid grid-cols-1 md:grid-cols-3 gap-4">
+					{layers.map((layer) => (
+						<div class="rounded-2xl border p-5 flex flex-col space-y-4 hover:border-blue-400 hover:bg-blue-400/10 border-white/20 transition-colors cursor-pointer">
+							<h3 class="text-lg font-bold">{layer.title}</h3>
+							<div class="flex flex-row flex-wrap gap-2">
+								{layer.tags.map((tag) => (
+									<span class="text-sm font-mono rounded-full bg-white/10 px-2 py-0.5">{tag}</span>
+								))}
+							</div>
+						</div>
+					))}
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<section class="w-full bg-blue-50 text-black flex justify-center px-6 py-24" data-nav-theme="dark">
+		<div class="max-w-5xl w-full flex flex-col space-y-16">
+			<div class="flex flex-col space-y-8">
+				<h2 class="text-3xl font-bold">Evidence, not adjectives</h2>
+				<div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+					{evidence.map(({ title, text }) => (
+						<a href="/work" class="bg-black/5 hover:bg-black/10 transition-colors rounded-2xl p-6 flex flex-col space-y-2">
+							<h3 class="text-xl font-bold">{title}</h3>
+							<p class="text-black/70">{text}</p>
+						</a>
+					))}
+				</div>
+			</div>
+
+			<div class="flex flex-col space-y-8">
+				<h2 class="text-3xl font-bold">Background</h2>
+				<ol class="flex flex-col border-l-2 border-black/20 ml-2 space-y-6">
+					{timeline.map(({ where, what, detail }) => (
+						<li class="pl-6 relative">
+							<span class="absolute -left-1.75 top-2 block size-3 rounded-full bg-black"></span>
+							<p class="font-bold text-lg">{where}</p>
+							<p>{what}</p>
+							<p class="text-black/60">{detail}</p>
+						</li>
+					))}
+					<li class="pl-6 relative">
+						<span class="absolute -left-1.75 -top-2 block size-3 rotate-45 border-r-2 border-b-2 border-black/20"> </span>
+					</li>
+				</ol>
+				<div class="flex flex-row items-center gap-3 bg-black/5 rounded-2xl p-5">
+					<IconLanguage size={28} class="shrink-0" />
+					<p>Fully bilingual French / English. TOEFL iBT <b>100/120</b>, TOEIC <b>945/990</b>.</p>
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<section class="w-full bg-gray-800 flex justify-center px-6 py-24" data-nav-theme="light">
+		<div class="max-w-5xl w-full flex flex-col md:flex-row items-center gap-12">
+			<img
+				src="/images/bouldering.jpg"
+				alt="Théo bouldering in a climbing gym"
+				class="w-56 aspect-3/4 object-cover rounded-3xl border border-white/20"
+			/>
+			<div class="flex flex-col space-y-5">
+				<div class="flex flex-row items-center gap-2 text-white/70">
+					<IconMountain size={20} />
+					<span>Outside of code</span>
+				</div>
+				<p class="text-2xl">I boulder. Same habit as at work: study the problem, plan the sequence, then commit to the move.</p>
+				<p class="text-white/70">
+					I'm looking for technically demanding work: startups without a senior architect, performance and C/C++ problems and prototypes that need to become production systems.
+				</p>
+				<div class="flex flex-row space-x-4">
+					<a class="flex flex-row space-x-2 cursor-pointer bg-white/20 rounded-4xl py-1 px-2" href="/work">
+						<IconBriefcase />
+						<span>View my work</span>
+					</a>
+					<a class="flex flex-row space-x-2 cursor-pointer bg-white/20 rounded-4xl py-1 px-2" href="/contact">
+						<IconMail />
+						<span>Get in touch</span>
+					</a>
+				</div>
+			</div>
+		</div>
+	</section>
 </Layout>
